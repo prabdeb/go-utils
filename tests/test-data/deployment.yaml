@@ -1,0 +1,27 @@
+kind: DeploymentConfig
+apiVersion: v1
+metadata:
+  name: simple-go-server
+spec:
+  template:
+    metadata:
+      labels:
+        name: simple-go-server
+    spec:
+      containers:
+      - name: simple-go-server
+        image: prabdeb/simple-go-server:latest
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+      - name: simple-go-server1
+        image: prabdeb/simple-go-server1:latest
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+  replicas: 1
+  strategy:
+    type: Rolling
+  paused: false
+  revisionHistoryLimit: 2
+  minReadySeconds: 0
