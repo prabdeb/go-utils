@@ -9,7 +9,7 @@ Small utilities for GO that currently includes -
 
 ### 01. Modify OpenShift Deployment Image
 
-```yaml
+```go
 package main
 
 import (
