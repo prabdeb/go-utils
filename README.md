@@ -2,15 +2,16 @@
 
 Small utilities for GO that currently includes -
 
-1. OpenStack
-    - App Deployment Parser
-2. Common
-	- String Array Contains
-	- Int Array Contains
-	- Calendar (between two times)
-		- Month
-		- Day
-		- Week
+* Common
+  * Contains
+    * String Array
+    * Int Array
+  * Calendar (between two times)
+    * Month
+    * Day
+    * Week
+* OpenStack
+  * App Deployment Parser
 
 ## Examples
 
