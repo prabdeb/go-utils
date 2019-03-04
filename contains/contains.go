@@ -1,4 +1,4 @@
-package common
+package contains
 
 // Contains can search in string or int Array and does not work for maps
 // for maps the below can be used -

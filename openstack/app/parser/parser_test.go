@@ -1,22 +1,20 @@
-package cases
+package parser
 
 import (
 	"testing"
-
-	"github.com/prabdeb/go-utils/openstack/app/parser"
 )
 
 func TestDeploymentLoad(t *testing.T) {
-	parser := parser.New()
-	err := parser.Deployment("../data/deployment.yaml")
+	parser := New()
+	err := parser.Deployment("../../../tests/data/deployment.yaml")
 	if err != nil {
 		t.Error(err.Error())
 	}
 }
 
 func TestGetImage(t *testing.T) {
-	parser := parser.New()
-	err := parser.Deployment("../data/deployment.yaml")
+	parser := New()
+	err := parser.Deployment("../../../tests/data/deployment.yaml")
 	if err != nil {
 		t.Error(err.Error())
 	}
@@ -26,8 +24,8 @@ func TestGetImage(t *testing.T) {
 }
 
 func TestGetImageForContainer(t *testing.T) {
-	parser := parser.New()
-	err := parser.Deployment("../data/deployment.yaml")
+	parser := New()
+	err := parser.Deployment("../../../tests/data/deployment.yaml")
 	if err != nil {
 		t.Error(err.Error())
 	}
@@ -37,8 +35,8 @@ func TestGetImageForContainer(t *testing.T) {
 }
 
 func TestSetImage(t *testing.T) {
-	parser := parser.New()
-	err := parser.Deployment("../data/deployment.yaml")
+	parser := New()
+	err := parser.Deployment("../../../tests/data/deployment.yaml")
 	if err != nil {
 		t.Error(err.Error())
 	}
@@ -49,8 +47,8 @@ func TestSetImage(t *testing.T) {
 }
 
 func TestSetImageForContainer(t *testing.T) {
-	parser := parser.New()
-	err := parser.Deployment("../data/deployment.yaml")
+	parser := New()
+	err := parser.Deployment("../../../tests/data/deployment.yaml")
 	if err != nil {
 		t.Error(err.Error())
 	}
